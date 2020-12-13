@@ -21,8 +21,8 @@
 			    }
 			    
 				#container {
-				    position: relative;
-				    margin: 0 auto;
+                    position: relative;
+                    margin: 0 auto;
                     width: 1280px;
                     height: 720px;
                     overflow: hidden;
@@ -120,7 +120,7 @@
 		        <input type="text" value="Player2">
 		    </div>
 			<div id="tournament">
-			    <input type="text" value="Pre-Season Cup">
+			    <input type="text" value="Tournament name">
 			</div>
 		</div>
 		<script src="html2canvas.js"></script>
@@ -140,15 +140,6 @@
 		            element.style.backgroundImage = commandersImagePaths[index]
 		        })
 		    })
-		    
-      
-            
-            html2canvas(document.querySelector('#container'), {
-              onrendered: function(canvas) {
-                var img = canvas.toDataURL()
-                window.open(img);
-              }
-            });
 		</script>
 	</body>
 </html>
